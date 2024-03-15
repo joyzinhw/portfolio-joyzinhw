@@ -13,7 +13,7 @@
 body {
     background-color: #5c6ba2;
     color: #7096dc;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Retro Gaming";
     margin: 0;
     padding: 0;
     display: flex;
@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    border-bottom: 0.3px solid #606060;
+    border-bottom: 0.3px solid #ffffff;
 }
 
 
@@ -41,11 +41,11 @@ body {
 }
 
 .cabecalho-menu-item {
-    font-family: 'Sarala', sans-serif;
+    font-family: "Retro Gaming";
     color: #ffffff;
     padding: 8px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
     transition: 0.2s;
     text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.6);
 }
@@ -116,23 +116,23 @@ main {
 }
 
 .meu-nome {
-    font-family: 'Righteous', cursive;
+    font-family: "Retro Gaming";
     display: flex;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 40px;
     text-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
 }
 
 .titulo, .titulo-assistir, .titulo-portfolio {
-    font-family: 'Righteous', cursive;
+    font-family: "Retro Gaming";
     display: flex;
     flex-direction: row;
-    font-size: 35px;
+    font-size: 16px;
     text-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
 }
 
 .titulo-separado {
-    font-family: 'Righteous', cursive;
+    font-family: "Retro Gaming";
     display: flex;
     flex-direction: row;
     font-size: 35px;
@@ -149,21 +149,21 @@ main {
 }
 
 .conteudo-secundario-titulo {
-    border-top: 0.3px solid #606060;
+    border-top: 0.3px solid #ffffff;
     padding-top: 48px;
-    font-family: 'Sarala', sans-serif;
+    font-family: "Retro Gaming";
     color: #ffffff;
     font-size: 30px;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Retro Gaming";
     color: #ffffff;
     font-size: 28px;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Retro Gaming";
     color: #ffffff;
     font-size: 24px;
 }
@@ -176,9 +176,8 @@ p {
     height: fit-content;
     max-height: 400px;
     width: fit-content;
-    max-width: 400px;
-    border: none;
-    border-radius: 50%;
+    max-width: 300px;
+    border-radius: 10%;
     box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
 }
 
@@ -249,7 +248,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Retro Gaming";
     color: #ffffff;
     font-size: 18px;
     text-decoration: none;
@@ -295,7 +294,7 @@ p {
 
 .rodape h3 {
     color: #000000;
-    font-family: 'Righteous', cursive;
+    font-family: "Retro Gaming";
     font-size: 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
