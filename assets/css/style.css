@@ -1,289 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Sarala:wght@700&display=swap');
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+a {
+    color: #F2FFFC;
     text-decoration: none;
 }
 
-body {
-    background-color: #5c6ba2;
-    color: #7096dc;
-    font-family: "Retro Gaming";
-    margin: 0;
+*{
+    box-sizing: border-box;
     padding: 0;
-    display: flex;
-    height: 100vh; 
-    flex-direction: column; 
-    align-items: center; 
+    margin: 0;
+    font-family: poppins, sans-serif;
+    text-decoration: nome;
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    border-bottom: 0.3px solid #ffffff;
+body{
+    overflow-x: hidden;
 }
-
-
-/* navegação do cabeçaçho */
-
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
-    transition: 0.2s;
-}
-
-.cabecalho-menu-item {
-    font-family: "Retro Gaming";
-    color: #ffffff;
-    padding: 8px;
-    font-weight: 400;
-    font-size: 20px;
-    transition: 0.2s;
-    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.6);
-}
-
-.cabecalho-menu a:hover {
-    color: #ffffff;
-    transform: scale(1.1);
-
-}
-
-/* corpo das páginas */
-
-main {
-    margin-top: 20px;
-}
-
-.body-index {
-    font-size: 100%;
-    background-color: #5c6ba2;
-    padding-bottom: 100px;
-}
-
-.body-projetos {
-    font-size: 100%;
+.hero-header{
+    width: 100%;
     height: 100%;
-    background-color: #5c6ba2;
-    padding-bottom: 100px;
+    min-height: 100vh;
+    background: #222;
 }
 
-.body-hobbies {
-    font-size: 100%;
-    height: 100%;
-    background-color: #5c6ba2;
-    padding-bottom: 100px;
+.wrapper{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;    
 }
 
-.section-normal {
+header{
+    padding: 40px 0 30px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 58px;
-    margin-left: 15px;
-    margin-right: 15px;
+    flex-wrap: wrap;
 }
 
-.section-especial {
-    margin-top: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo{
+    display: inline-flex;
     justify-content: center;
-    gap: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    align-items: center;
 }
 
-/* parte escrita do conteudo */
+.logo i{
+    height: 45px;
+    width: 45px;
+    background-color: #5c6ba2;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
 
-.parte-escrita {
-    width: fit-content;
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display:none;
+}
+
+nav .togglebtn span{
+    display: block;
+    background-color: #5c6ba2;
+    margin: 5px 0px;
+    width: 100%;
+    height: 4px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+
+nav .navlinks{
+    list-style-type: none;
+}
+
+nav .navlinks li{
+    display: inline-block;
+    color: #ffffff;
+    margin: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+}
+
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+
+.hero-pic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+
+.hero-text{
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
-.meu-nome {
-    font-family: "Retro Gaming";
-    display: flex;
-    flex-direction: row;
-    font-size: 40px;
-    text-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
+.hero-text h3{
+    color: aliceblue;
+    font-size: 14px;
 }
 
-.titulo, .titulo-assistir, .titulo-portfolio {
-    font-family: "Retro Gaming";
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    text-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
+.hero-text h3 span{
+    color: #5c6ba2;
+    font: 16px;
 }
 
-.titulo-separado {
-    font-family: "Retro Gaming";
-    display: flex;
-    flex-direction: row;
-    font-size: 35px;
-    gap: 15px;
-    text-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
+.hero-text h5{
+    font-size: 50px;
+    color: #5c6ba2;
+    font: 3rem;
 }
 
-.titulo-1 {
+.hero-text p{
+    color: aliceblue;
+}
+
+.btn-group{
+    margin: 45px 0;
+}
+
+.btn-group .btn{
+    border-color: #d5d5d5;
     color: #ffffff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 10px -18px rgb(0 0 0 / 78%);
 }
 
-.titulo-2 {
-    color: #ffffff;
+.btn.active{
+    border-color: #5c6ba2;
 }
 
-.conteudo-secundario-titulo {
-    border-top: 0.3px solid #ffffff;
-    padding-top: 48px;
-    font-family: "Retro Gaming";
+.hero-text .social i{
     color: #ffffff;
     font-size: 30px;
+    margin-right: 20px;
+    transition: 0.5s;
 }
 
-h2 {
-    font-family: "Retro Gaming";
-    color: #ffffff;
-    font-size: 28px;
+.hero-text .social i:hover{
+    color: #5c6ba2;
+    transform: rotate(360deg);
 }
-
-p {
-    font-family: "Retro Gaming";
-    color: #ffffff;
-    font-size: 24px;
-}
-
-/* parte da imagem do conteudo */
-
-.imagem {
-    margin-left: 15px;
-    margin-top: 20px;
-    height: fit-content;
-    max-height: 400px;
-    width: fit-content;
-    max-width: 300px;
-    border-radius: 10%;
-    box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
-}
-
-.imagem-projetos {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
-    height: fit-content;
-    max-height: 500px;
-    width: fit-content;
-    max-width: 550px;
-    border: none;
-    border-radius: 3%;
-    box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.25);
-}
-
-/* parte dos icones do conteudo */
-
-.conteudo-secundario-icones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.conteudo-secundario-icones i {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    background-color: none;
-    color: #ffffff;
-    margin: 0.6px;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
-    font-size: 50px;
-    padding-top: 50px;
-}
-
-.conteudo-secundario-icones i:hover {
-    transform: scale(1.6);
-}
-
-.html i:hover{
-    color: #e34c26;
-}
-
-.css3 i:hover{
-    color: #264de4;
-}
-
-.python i:hover{
-    color: #fcd15b;
-}
-
-.java i:hover{
-    color: #eb2e2e;
-}
-
-.steam i:hover{
-    color: #0c558a;
-}
-
-.codigo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-family: "Retro Gaming";
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.codigo a {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    background-color: #202020;
-    color: #ffffff;
-    border: 0.1px solid #ffffff;
-    margin: 0.6px;
-    border-radius: 50px;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
-    font-size: 20px;
-}
-
-.codigo a:hover {
-    background-color: #808080;
-    color: #000000;
-}
-
-.codigo a i {
-    transition: 00.3s all;
-}
-
-.codigo a:hover > i {
-    transform: scale(1.6) rotate(360deg);
-}
-
-/* parte do rodape */
-
 .rodape {
     position: fixed;
     display: inline-flex;
@@ -294,7 +186,7 @@ p {
 
 .rodape h3 {
     color: #000000;
-    font-family: "Retro Gaming";
+    font-family: 'Righteous', cursive;
     font-size: 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -304,7 +196,7 @@ p {
     display: inline-flex;
     width: 50px;
     height: 50px;
-    background-color: #000000;
+    background-color:  #5c6ba2;
     color: #ffffff;
     margin: 0.6px;
     border-radius: 50px;
@@ -337,173 +229,81 @@ p {
 }
 
 
-.terminal-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-}
-
-.terminal {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 80%;
-    max-width: 800px;
-    background-color: #252121;
-    margin: 0 auto;
-}
-
-
-.terminal h1 {
-    font-family: "Retro Gaming";
-    font-size: 30px;
-    color: #ffffff;
-    padding-left: 10px;
-    margin: 2rem 0 3rem 0;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.terminal-header-top {
-    background-color: #ffffff;
-    border-radius: 5px 5px 0 0;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-}
-
-.terminal-header-top::before {
-    content: '\2022 \2022 \2022';
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-}
-
-.terminal-header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.terminal-icon {
-    font-size: 24px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.terminal-title {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.botao {
-    margin-top: 100px;
-    margin: 0 auto;
-    padding: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #9a4d6c;
-    color: #ffffff;
-    border: none;
-    height: 40px;
-    width: 200px;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-  .botao:hover {
-    background-color: #7a3651;;
-}
-
-/* codigo da init funcional */
-
-.nav {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-    color: #ffffff;
-  }
-  
-  .fa-arrow-left::before {
-    content: '\2190';  
-    font-family: 'Font Awesome 6 Solid'; 
-    font-size: 50px; 
-  }
-  
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 80px;
-    margin-top: 30px;
-  }
-
-  .card {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 80%;
-    max-width: 800px;
-    background-color: #252121;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-
-.card-header-top {
-    background-color: #ffffff;
-    border-radius: 5px 5px 0 0;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-}
-
-.card-header-top::before {
-    content: '\2022 \2022 \2022';
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-}
-  iframe {
-    border-radius: 12px;
-    width: 100%;
-    height: 352px;
-  }
-
-@media only screen and (max-width: 600px) {
-    .terminal {
-        width: 95%;
-        max-width: none;
-        margin-top: 10px;
+@media(max-width:930px){
+    nav .togglebtn{
+        display: initial;
     }
 
-    .terminal-wrapper {
-        height: auto;
+    .click{
+        top: 45px;
     }
 
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .navlinks{
+        color: #962525;
+    }
+
+    .navlinks {
+        color: #F2FFFC;
+        text-decoration: none;
+    }
+
+    nav .navlinks{
+        position: absolute;
+        top: 110px;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-sizing: 5px 13px rgba(255, 255, 255, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+
+    nav .navlinks li{
+        display: block;        
+    }
+
+    nav .navlinks li a{
+        display: block;
+        margin: 15px;
+        text-align: center;
+    }
+
+    nav .navlinks.open{
+        right:0
+    }
+
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0px;
+    }
+}    
 }

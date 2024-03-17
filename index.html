@@ -12,62 +12,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--cod para os iconies que eu peguei de um site-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Home</title>
+    <title>Sobre</title>
 </head>
-<body class="body-index">
-    <header class="cabecalho">
-      
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="index.html">Home</a>
-            <a class="cabecalho-menu-item" href="hobbies.html">Hobbies</a>
-            <a class="cabecalho-menu-item" href="projetos.html">Projetos</a>
-        </nav>
-    </header>
+<body>
 
-    <main>
-        <section class="section-normal">
-            <div class="parte-escrita">
-                <div class="meu-nome">
-                    <div class="titulo-1">
-                        <h1 class="car">Joyce Moura</h1>
-                      
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-j"></i>
+                    <div class="logo-text">joyzinhw</div>
+
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    
+                    <ul class= "navlinks">
+                        <li><a href="index.html">Sobre</a></li>
+                        <li><a href="navegacao/sobre.html">Sobre</a></li>
+                        <li><a href="navegacao/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="/assets/img/foto-perfil.jpg" alt="profilepicture">        
                 </div>
-                <h2 class="subtitulo">
-                    Acadêmica em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Piauí, 
-                    explorando a interação entre teoria e prática para a criação de soluções inovadoras.
+                <div class="hero-text">
+                    <h3><span class="input">Allons-y</span></h3>
+                    <h5>Joyce Moura</h5>
+                    <p> 
+                    Acadêmica em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Piauí, explorando a interação entre teoria e prática para a criação de soluções inovadoras. 
                     <br>
-                    Com envolvimento ativo em pesquisas acadêmicas, com foco em Processamento de Linguagem Natural, investigando como a linguagem humana pode ser interpretada e processada por sistemas computacionais para diversas aplicações, além de possuir habilidades específicas em desenvolvimento web como front-end.</div>
-            <img class="imagem" src="/assets/img/foto-perfil.jpg" alt="Imagem principal">
-        </section>
+                    Com envolvimento ativo em pesquisas acadêmicas, com foco em Processamento de Linguagem Natural, investigando como a linguagem humana pode ser interpretada e processada por sistemas computacionais para diversas aplicações, 
+                    além de possuir habilidades específicas em desenvolvimento web como front-end.
 
-        <section class="section-especial">
-            <h2 class="conteudo-secundario-titulo">Skills</h2>
-            <div class="conteudo-secundario-icones">
-                <div class="html">
-                    <i class="fa-brands fa-html5"></i>
+
+                    </p>
+                   
+                  
                 </div>
-                <div class="css3">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div class="python">
-                    <i class="fa-brands fa-python"></i>
-                </div>
-                <div class="java">
-                    <i class="fa-brands fa-java"></i>
-                </div>
-               
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
     <footer>
         <div class="rodape">
-            <a href="https://www.instagram.com/joyzinhw/" aria-label="Entre em contato com Carlos Michael através de seu instagram!" target="_blank"><i class="fa-brands fa-instagram"></i><h3>instagram</h3></a>
-            <a href="https://github.com/joyzinhw" aria-label="Veja em mais detalhes os códigos de Carlos Michael em seu perfil do github!" target="_blank"><i class="fa-brands fa-github"></i><h3>github</h3></a>
+            <a href="https://www.instagram.com/joyzinhw/" aria-label="Entre em contato seu instagram!" target="_blank"><i class="fa-brands fa-instagram"></i><h3>instagram</h3></a>
+            <a href="https://github.com/joyzinhw" aria-label="Veja em mais detalhes os códigos de seu perfil do github!" target="_blank"><i class="fa-brands fa-github"></i><h3>github</h3></a>
         </div>
     </footer>
 
+    <script>
 
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        toggle.btn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+    </script>
 </body>
+</html>
+
