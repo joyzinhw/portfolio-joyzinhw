@@ -227,7 +227,51 @@ nav .navlinks li{
     transition: 0.1s;
     transition-delay: 0.1s;
 }
-
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #f9f9f9;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        z-index: 1;
+    }
+    .navlinks.open {
+        display: flex;
+    }
+    .navlinks li {
+        margin-bottom: 10px;
+    }
+    .togglebtn {
+        display: block;
+    }
+    .togglebtn span {
+        background-color: #333;
+        height: 3px;
+        width: 25px;
+        display: block;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .togglebtn.click span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .togglebtn.click span:nth-child(2) {
+        opacity: 0;
+    }
+    .togglebtn.click span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
 
 @media(max-width:930px){
     nav .togglebtn{
