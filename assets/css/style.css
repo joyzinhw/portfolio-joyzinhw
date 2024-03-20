@@ -139,6 +139,9 @@ nav .navlinks li{
     font-size: 50px;
     color: #5c6ba2;
     font: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-text p{
@@ -176,6 +179,62 @@ nav .navlinks li{
     color: #5c6ba2;
     transform: rotate(360deg);
 }
+
+/* parte dos icones do conteudo */
+
+.conteudo-secundario-icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.conteudo-secundario-icones i {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    color: #808080;
+    margin: 0.6px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.conteudo-secundario-icones i:hover {
+    transform: scale(1.6);
+}
+
+.html i:hover{
+    color: #e34c26;
+}
+
+.css3 i:hover{
+    color: #264de4;
+}
+
+.python i:hover{
+    color: #fcd15b;
+}
+
+.java i:hover{
+    color: #eb2e2e;
+}
+
+.react i:hover{
+    color: #517fa0;
+}
+.node i:hover{
+    color: #286b39;
+}
+.javascript  i:hover{
+    color: #ecca0a;
+}
+
 .rodape {
     position: fixed;
     display: inline-flex;

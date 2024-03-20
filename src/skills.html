@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <!--cod para os iconies que eu peguei de um site-->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Formações</title>
+    
+    <title>Skills</title>
 </head>
 <body>
 
@@ -40,28 +41,40 @@
                 </nav>
             </header>
             <div class="container">
-                <div class="hero-pic">
-                    <img src="/assets/img/foto-perfil.jpg" alt="profilepicture">        
-                </div>
+               
                 <div class="hero-text">
-                   
-                    <h5><span class="input">Formações</span></h5>
+                    
+                    <h5>Habilidades</h5>
                     <br>
-                    <p> 
-                        Técnica em Informática pelo Instituto Federal do Piauí. (2022)<br>
-                        Acadêmica em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Piauí. (Atual - 2025) <br>
-                        <br>
-                        Explorando a integração entre teoria e prática para desenvolvimento de soluções inovadoras. Com envolvimento ativo em pesquisa acadêmica, 
-                        com foco em Processamento de Linguagem Natural, explorando como a linguagem humana pode ser interpretada e processada por sistemas computacionais para aplicações diversas e possuindo conhecimentos direcionados em desenvolvimento web como front-end.
-                    </p>
-                    <br>
+                    <section class="section-especial">
+                        <div class="conteudo-secundario-icones">
+                            <div class="html">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="css3">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <div class="python">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="java">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="react">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                            <div class="node">
+                                <i class="fa-brands fa-node"></i>
+                            </div>
+                            <div class="javascript">
+                                <i class="fa-brands fa-js"></i></i>
+                            </div>
+        
+                        </div>
 
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/joyzinhw" target="_blank" rel="external"> <i class="fa-brands fa-linkedin"></i></a>
-                        <a href="http://lattes.cnpq.br/5034898118586859" target="_blank" rel="external"> <i class="ai ai-lattes ai-3x"></i></a>
+                    </section>
+                    
 
-                        </a>
-                      </div>
                   
                 </div>
             </div>
@@ -81,11 +94,10 @@
         var nav=document.querySelector(".navlinks");
         var links=document.querySelector(".navlinks li");
 
-        toggle.btn.addEventListener("click", function(){
+        togglebtn.addEventListener("click", function(){
             this.classList.toggle("click");
-            nav.classList.toggle("open")
-        })
+            nav.classList.toggle("open");
+        });
     </script>
 </body>
 </html>
-
