@@ -204,6 +204,31 @@ nav .navlinks li{
     font-size: 50px;
     padding-top: 50px;
 }
+.section-especial {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+}
+
+.section-especial .conteudo-secundario-icones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-especial .conteudo-secundario-icones i {
+    width: 70px; 
+    height: 70px;
+    font-size: 50px;
+   
+}
 
 .conteudo-secundario-icones i:hover {
     transform: scale(1.6);
