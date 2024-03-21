@@ -318,10 +318,13 @@ nav .navlinks li{
     color: #000000;
 }
 p {
-    font-size: 24px;
-    align-items: center;
-    text-align: center;
+    font-size: 18px;
+    align-items:flex-end;
+   
   }
+.tx {
+    text-align: center;
+}
 .rodape {
     position: fixed;
     display: inline-flex;
