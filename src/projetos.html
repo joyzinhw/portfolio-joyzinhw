@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="@joyzinhw">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="sites, web, desenvolvimento, portfolio">
+    <!--tag de desc-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!--cod para os iconies que eu peguei de um site-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="short icon" href="assets/img/icone.jpeg">
+    <title>Sobre</title>
+</head>
+<body>
+
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <a href="/index.html"><i class="fa-solid fa-j"></i></a>
+                    <div class="logo-text">oyzinhw</div>
+
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                        <ul class= "navlinks">
+                            <li><a href="/src/index.html">Perfil</a></li>
+                            <li><a href="/src/formações.html">Formações</a></li>
+                            <li><a href="/src/skills.html">Skills</a></li>
+                            <li><a href="#">Projetos</a></li>
+                            <li><a href="/src/contatos.html">Contatos</a></li>
+                        </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                   
+                    <h5>Projetos</h5>
+                     <br>
+                    <section class="section-normal">
+                        <div>
+                            <img class="imagem-projetos" src="/assets/img/codpet.jpeg" alt="imagem da primeira atividade">
+                        </div>
+                        <br>
+                        <div class="parte-escrita">
+                            <div class="titulo-separado">
+                                <h1 class="titulo-1">CodPet</h1>
+                        
+                            </div>
+                            <br>
+                            <p class="texto">
+                                Pensando em facilitar localização de animais perdidos e ajudar na divulgação de adoção dos mesmo, pois existem muitos meios de divulgação e procura e observamos que os meios existentes são obsoletos e não tão perceptíveis,
+                                logo o projeto se propõe a ser um tipo uma central onde serão cadastrados os animais perdidos com suas informações de seus respectivos donos e demais dados para possibilitar a devolução.
+                                <br>
+                                <br>
+
+                            <div class="codigo">
+                                <a href="https://github.com/ifpi-picos/projeto-web-full-stack-mandalori" aria-label="Veja o código."><i class="fa-solid fa-code"></i></a>
+                            </div>
+                        </div>
+                    </section>
+
+                        <br>
+                    <section class="section-normal">
+                        <div class="parte-escrita">
+                            <div class="titulo-portfolio">
+                                <h1 class="titulo-1">Sistema de Login
+                            </h1>
+                               
+                            </div>
+                            <br>
+                        
+                           <p>Sistema em python com banco de dados slqlite3</p>
+                           <br>
+                                <div class="codigo">
+                                <a href="https://github.com/joyzinhw/sistemadelogin-tinkerpy" aria-label="Veja o código."><i class="fa-solid fa-code"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <img class="imagem-projetos" src="/assets/img/login.png" alt="imagem da segunda atividade">
+                        </div>
+                    </section>
+                    <br>
+                    <section class="section-normal">
+                    
+                        <div class="parte-escrita">
+                            <div class="titulo-separado">
+                                <h1 class="titulo-1">Pagina de Formulario</h1>
+                        
+                            </div>
+                            <br>
+                            <p class="texto">
+                                Pagina de formulario, Pagina de cadrastro.
+                                <br>
+                                <br>
+                            <div class="codigo">
+                                <a href="https://github.com/joyzinhw/page-formulario" aria-label="Veja o código."><i class="fa-solid fa-code"></i></a>
+                            </div>
+
+                            <br>
+
+                            <div>
+                                <img class="imagem-projetos" src="/assets/img/formulario.png" alt="imagem da primeira atividade">
+                            </div>
+                          
+                        </div>
+                    </section>
+                </div>
+            </div>
+           </div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <a href="https://www.instagram.com/joyzinhw/" aria-label="Entre em contato seu instagram!" target="_blank"><i class="fa-brands fa-instagram"></i><h3>instagram</h3></a>
+            <a href="https://github.com/joyzinhw" aria-label="Veja em mais detalhes os códigos de seu perfil do github!" target="_blank"><i class="fa-brands fa-github"></i><h3>github</h3></a>
+        </div>
+    </footer>
+
+    <script>
+
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
