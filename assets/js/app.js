@@ -48,8 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function displayMessages() {
     messageList.innerHTML = "";
+
     let messages = JSON.parse(localStorage.getItem("messages")) || [];
     messages.forEach(function(message) {
+
         const messageContainer = document.createElement("div");
         messageContainer.classList.add("message-item");
         
@@ -72,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
         messageList.appendChild(messageContainer);
     });
 }
-
   
   displayMessages();
 })
